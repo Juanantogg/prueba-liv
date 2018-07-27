@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Te invitamos a conocer nuestro sitio, conoce los increíbles sabores que Livean te ofrece. También contamos con un increíble blog.">
+  <title>Filosofía | Livean</title>
+  <link rel="shortcut icon" href="./favicon.png">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="cabecera"><a class="logo" href="./"><img class="logo__imagen" src="./img/comun/logo.png" alt="livean-logo"></a>
+    <div class="botton-menu" id="menu"><span class="botton-menu__logo" id="botton-menu"></span></div>
+    <nav class="navegacion-principal" id="navegacion-principal">
+      <ul class="navegacion-principal__uno">
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./">INICIO</a></li>
+        <li class="navegacion-principal__item" id="nosotros"><a class="navegacion-principal__link navegacion-principal__link--activa navegacion-principal__nosotros" id="nosotros-item">NOSOTROS<img src="./img/comun/lefNav.png"></a>
+          <ul class="navegacion-principal__dos" id="submenu">
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link navegacion-principal__link--activa" href="./filosofia.html">Filosof&iacute;a</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./historia.html">Historia</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./modelo-negocio.html">Modelo de negocio</a></li>
+            <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./responsabilidad-social.html">Responsabilidad Social Empresarial</a></li>
+          </ul>
+        </li>
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./productos.html">PRODUCTOS</a></li>
+        <li class="navegacion-principal__item"><a class="navegacion-principal__link" href="./blog.html">BLOG</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contacto">
+    <h2 class="title">Contacto</h2>
+    <div class="formulario">
+      <form id="contacto" method="post">
+        <fieldset>
+          <legend>Mandanos tus comentarios</legend>
+          <label for="nombre"><span>*</span> Nombre:</label>
+          <input id="nombre" name="nombre" placeholder="Escribe tu nombre" required type="text">
+          <label for="apellido"><span>*</span> Apellido:</label>
+          <input id="apellidos" name="apellido" placeholder="Escribe tu apellido" required type="text">
+          <label>Empresa:</label>
+          <input id="empresa" name="empresa" placeholder="¿A qué empresa perteneces?" type="text">
+          <label for="correo"><span>*</span> Correo electrónico</label>
+          <input class="email" id="correo_electronico" name="correo" placeholder="Escribe tu correo electónico" required type="email">
+          <label for="telefono">Teléfono:</label>
+          <input id="telefono" name="telefono" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel">
+          <label for="telefono_movil">Teléfono móvil:</label>
+          <input id="telefono_movil" name="telefono_movil" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel">
+          <label for="estado"><span>*</span> Estado</label>
+          <select id="estado" name="estado" required>
+            <option disabled selected value="Selecciona un estado">Selecciona un estado</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Ciudad de México">Ciudad de Mexico</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Coahuila">Coahuila de Zaragoza</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Estado de México">Estado de México</option>
+            <option value="Michoacán">Michoacán de Ocampo</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Querétaro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potosí;</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz de Ignacio de la Llave</option>
+            <option value="Yucatán">Yucatán</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+          <label for="mensaje"><span>*</span> Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required rows="7"></textarea>
+          <input id="acepto_terminos_chk" name="acepto_terminos_chk" required type="checkbox">
+          <label class="acepto" for="acepto_terminos_chk">Confirmo que he leído y acepto los Términos y Condiciones del &nbsp;<a href="./aviso-de-privacidad.html" target="_blank">Aviso de Privacidad.</a></label>
+          <p class="camposObligatorios"><span>* Campos obligatorios</span></p>
+          <div id="impresion_errores"></div>
+          <input id="boton_enviar" name="boton_enviar" type="submit" value="Enviar">
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="pie__fondo">
+      <div class="pie__arriba" id="arriba"><span class="slider__flecha"></span></div>
+    </div>
+    <div class="pie__logos"><img src="./img/comun/grupo-nutresa-logotipo.png" width="70" alt=""><img src="./img/comun/logo_tresmontes.png" width="70" alt=""><a class="pie__privacidad" href="./aviso-de-privacidad.html">Aviso de privacidad</a></div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
