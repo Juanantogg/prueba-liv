@@ -32,19 +32,19 @@
       <form id="contacto" method="post">
         <fieldset>
           <legend>Mandanos tus comentarios</legend>
-          <label for="nombre"><span>*</span> Nombre:</label>
+          <label class="obligatorio" for="nombre">Nombre:</label>
           <input id="nombre" name="nombre" placeholder="Escribe tu nombre" required type="text">
-          <label for="apellido"><span>*</span> Apellido:</label>
+          <label class="obligatorio" for="apellido">Apellido:</label>
           <input id="apellidos" name="apellido" placeholder="Escribe tu apellido" required type="text">
           <label>Empresa:</label>
           <input id="empresa" name="empresa" placeholder="¿A qué empresa perteneces?" type="text">
-          <label for="correo"><span>*</span> Correo electrónico</label>
+          <label class="obligatorio" for="correo">Correo electrónico</label>
           <input class="email" id="correo_electronico" name="correo" placeholder="Escribe tu correo electónico" required type="email">
           <label for="telefono">Teléfono:</label>
-          <input id="telefono" name="telefono" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel">
+          <input id="telefono" name="telefono" placeholder="123-456-7890" pattern="[0-9]{10}" type="tel">
           <label for="telefono_movil">Teléfono móvil:</label>
-          <input id="telefono_movil" name="telefono_movil" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel">
-          <label for="estado"><span>*</span> Estado</label>
+          <input id="telefono_movil" name="telefono_movil" placeholder="123-456-7890" pattern="[0-9]{10}" type="tel">
+          <label class="obligatorio" for="estado">Estado</label>
           <select id="estado" name="estado" required>
             <option disabled selected value="Selecciona un estado">Selecciona un estado</option>
             <option value="Aguascalientes">Aguascalientes</option>
@@ -80,11 +80,11 @@
             <option value="Yucatán">Yucatán</option>
             <option value="Zacatecas">Zacatecas</option>
           </select>
-          <label for="mensaje"><span>*</span> Mensaje</label>
-          <textarea id="mensaje" name="mensaje" required rows="7"></textarea>
-          <input id="acepto_terminos_chk" name="acepto_terminos_chk" required type="checkbox">
-          <label class="acepto" for="acepto_terminos_chk">Confirmo que he leído y acepto los Términos y Condiciones del &nbsp;<a href="./aviso-de-privacidad.html" target="_blank">Aviso de Privacidad.</a></label>
-          <p class="camposObligatorios"><span>* Campos obligatorios</span></p>
+          <label class="obligatorio" for="mensaje">Describe tus necesidades en unas líneas:</label>
+          <textarea id="mensaje" name="mensaje" required rows="7" placeholder="Describe tus necesidades en unas líneas:"></textarea>
+          <label for="acepto_terminos_chk">
+            <input id="acepto_terminos_chk" name="acepto_terminos_chk" required type="checkbox">Confirmo que he leído y acepto los Términos y Condiciones del &nbsp;<a class="aviso" href="./aviso-de-privacidad.html" target="_blank">Aviso de Privacidad.</a>
+          </label><small class="obligatorio camposObligatorios">Campos obligatorios</small>
           <div id="impresion_errores"></div>
           <input id="boton_enviar" name="boton_enviar" type="submit" value="Enviar">
         </fieldset>
