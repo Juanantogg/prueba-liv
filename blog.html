@@ -38,23 +38,23 @@
   <main class="blog">
     <h2 class="title">Blog<img src="./img/comun/lefNav.png"></h2>
     <div class="blog__menu">
-      <div class="blog__item blog__item--activo">
+      <div class="blog__item blog__item--activo" id="estilo">
         <p>ESTILO DE VIDA</p><img class="blog__imagen" src="./img/blog/estilo-vida.png" alt=""><img class="blog__icono" src="./img/blog/estilo-vida-icono.png" alt="">
       </div>
-      <div class="blog__item">
+      <div class="blog__item" id="bienestar">
         <p>BIENESTAR</p><img class="blog__imagen" src="./img/blog/bienestar.png" alt=""><img class="blog__icono" src="./img/blog/bienestar-icono.png" alt="">
       </div>
-      <div class="blog__item">
+      <div class="blog__item" id="tendencias">
         <p>TENDENCIAS</p><img class="blog__imagen" src="./img/blog/tendencias.png" alt=""><img class="blog__icono" src="./img/blog/tendencias-icono.png" alt="">
       </div>
     </div>
-    <div class="blog__seccion blog__seccion--estilo-vida">
+    <div class="blog__seccion" id="contenedor-estilo">
       <h3 class="subtitulo">Estilo de vida</h3>
-      <div class="blog__contenedor" id="estilo-vida"><a class="card" href="./blogs/estilo-de-vida/recomendaciones-para-tarjeta-presentacion.html"><img class="card__imagen" src="./img/blog-estilo-vida/tarjetas-de-presentacion.jpg">
-          <h4 class="card__titulo">Consejos para el cuidado de tus accesorios</h4>
-          <p class="card__descripcion">Los accesorios requieren de cuidados especiales para mantener su textura y brillo en óptimas condiciones, y así luzcan como la primera vez que los usaste.</p></a><a class="card" href="./blogs/estilo-de-vida/apps-gestionar-tiempo-dentro-fuera-oficina.html"><img class="card__imagen" src="./img/blog-estilo-vida/apps-de-productividad.jpg">
-          <h4 class="card__titulo">Consejos para el cuidado de tus accesorios</h4>
-          <p class="card__descripcion">Los accesorios requieren de cuidados especiales para mantener su textura y brillo en óptimas condiciones, y así luzcan como la primera vez que los usaste.</p></a><a class="card" href="./blogs/estilo-de-vida/cuidado-de-tus-accesorios.html"><img class="card__imagen" src="./img/blog-estilo-vida/cuidado-accesorios.jpg">
+      <div class="blog__contenedor"><a class="card" href="./blogs/estilo-de-vida/recomendaciones-para-tarjeta-presentacion.html"><img class="card__imagen" src="./img/blog-estilo-vida/tarjetas-de-presentacion.jpg">
+          <h4 class="card__titulo">Recomendaciones para tu tarjeta de presentación</h4>
+          <p class="card__descripcion">Las tarjetas de presentación son una herramienta que proyecta tu imagen profesional, es por eso que debes utilizarlas correctamente y brindar los datos necesarios.</p></a><a class="card" href="./blogs/estilo-de-vida/apps-gestionar-tiempo-dentro-fuera-oficina.html"><img class="card__imagen" src="./img/blog-estilo-vida/apps-de-productividad.jpg">
+          <h4 class="card__titulo">Aplicaciones para gestionar tiempos dentro y fuera de la oficina</h4>
+          <p class="card__descripcion">Si necesitas administrar tus tiempos y tenerlo todo al alcance de tu mano, entonces, Wunderlist es una app que no debe faltar en tu smartphone.</p></a><a class="card" href="./blogs/estilo-de-vida/cuidado-de-tus-accesorios.html"><img class="card__imagen" src="./img/blog-estilo-vida/cuidado-accesorios.jpg">
           <h4 class="card__titulo">Consejos para el cuidado de tus accesorios</h4>
           <p class="card__descripcion">Los accesorios requieren de cuidados especiales para mantener su textura y brillo en óptimas condiciones, y así luzcan como la primera vez que los usaste.</p></a><a class="card" href="./blogs/estilo-de-vida/elige-el-labial-perfecto.html"><img class="card__imagen" src="./img/blog-estilo-vida/labial-perfecto.jpg">
           <h4 class="card__titulo">Tips para elegir el labial perfecto</h4>
@@ -70,9 +70,9 @@
           <h4 class="card__titulo">Productividad al 100%</h4>
           <p class="card__descripcion">La productividad se define como el número de recursos utilizados para obtener una producción. En el caso de los trabajadores se traduce con el tiempo y la energía empleada en una tarea.</p></a></div>
     </div>
-    <div class="blog__seccion blog__seccion--oculta">
+    <div class="blog__seccion blog__seccion--oculta" id="contenedor-bienestar">
       <h3 class="subtitulo">Bienestar</h3>
-      <div class="blog__contenedor" id="bienestar"><a class="card" href="./blogs/bienestar/redecora-tu-casa-con-estos-consejos.html"><img class="card__imagen" src="./img/blog-bienestar/redecora-tu-casa.jpg">
+      <div class="blog__contenedor"><a class="card" href="./blogs/bienestar/redecora-tu-casa-con-estos-consejos.html"><img class="card__imagen" src="./img/blog-bienestar/redecora-tu-casa.jpg">
           <h4 class="card__titulo">Redecora tu casa con estos consejos</h4>
           <p class="card__descripcion">Despídete de la rutina y redecora tu espacio favorito. Transforma una habitación con estos consejos que tenemos para ti.</p></a><a class="card" href="./blogs/bienestar/cuida-tu-alimentacion-con-estos-habitos.html"><img class="card__imagen" src="./img/blog-bienestar/alimentacion.jpg">
           <h4 class="card__titulo">Cuida tu alimentación con estos hábitos</h4>
@@ -80,9 +80,11 @@
           <h4 class="card__titulo">Cuidados básicos de tu piel y el sol</h4>
           <p class="card__descripcion">El sol es nuestra fuente más importante de vida, sin embargo la exposición prolongada a los rayos ultravioleta es sumamente dañino para nuestra piel, causante de quemaduras, envejecimiento prematuro, manchas e incluso cáncer de piel. Pero sigue estos cuidados básicos para tener una piel saludable.</p></a></div>
     </div>
-    <div class="blog__seccion blog__seccion--oculta">
+    <div class="blog__seccion blog__seccion--oculta" id="contenedor-tendencias">
       <h3 class="subtitulo">Tendencias</h3>
-      <div class="blog__contenedor" id="tendencias"><a class="card" href="./blogs/tendencias/decora-tu-habitacion-como-sala-de-cine.html"><img class="card__imagen" src="./img/blog-tendencias/habitacion-cine.png">
+      <div class="blog__contenedor"><a class="card" href="./blogs/tendencias/prolonga-la-vida-de-tu-smartphone.html"><img class="card__imagen" src="./img/blog-tendencias/vida-smartphone.jpg">
+          <h4 class="card__titulo">Tips para prolongar la vida de tu smartphone</h4>
+          <p class="card__descripcion">El teléfono móvil se ha convertido en una herramienta sumamente importante con la que interactuamos diariamente, sigue estos consejos para optimizar su vida útil y no te falle en el momento que menos esperas.</p></a><a class="card" href="./blogs/tendencias/decora-tu-habitacion-como-sala-de-cine.html"><img class="card__imagen" src="./img/blog-tendencias/habitacion-cine.png">
           <h4 class="card__titulo">Decora tu habitación como sala de cine</h4>
           <p class="card__descripcion">Si eres amante del cine vale la pena adaptar en tu casa o departamento tu propio cine casero.</p></a><a class="card" href="./blogs/tendencias/armoniza-tu-habitacion.html"><img class="card__imagen" src="./img/blog-tendencias/consejos-habitacion.jpg">
           <h4 class="card__titulo">Armoniza tu habitación con estos consejos</h4>
